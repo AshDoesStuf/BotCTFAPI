@@ -18,7 +18,7 @@ This plugin integrates a Mineflayer bot with a Capture the Flag (CTF) server via
 1. Install the plugin from npm:
 
     ```shell
-    npm install your-plugin-name
+    npm install botctfapi
     ```
 
 2. Once installed, you can require the plugin in your bot script:
