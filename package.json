@@ -1,0 +1,14 @@
+{
+  "name": "botctfapi",
+  "version": "1.0.0",
+  "description": "An api for ctf plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ash",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.16.0"
+  }
+}
