@@ -12,26 +12,20 @@ This plugin integrates a Mineflayer bot with a Capture the Flag (CTF) server via
 
 - Node.js and npm installed
 - Mineflayer installed (`npm install mineflayer`)
-- WebSocket client library installed (`npm install ws`)
 
 ## Installation
 
-1. Clone or download this repository.
-2. Navigate to the project directory in your terminal or command prompt.
-3. Run `npm install` to install the required dependencies.
+1. Install the plugin from npm:
 
-## Usage
-
-1. Open the plugin file and configure the server URL in the `loader` function:
-    ```javascript
-    const serverUrl = "ws://192.168.8.100:7890";  // Change to your server URL
+    ```shell
+    npm install your-plugin-name
     ```
 
-2. Load the plugin into your Mineflayer bot script:
+2. Once installed, you can require the plugin in your bot script:
 
     ```javascript
     const mineflayer = require("mineflayer");
-    const { loader } = require("./path/to/your/loader");
+    const { loader } = require("your-plugin-name");
 
     const bot = mineflayer.createBot({
         host: "server_ip",
@@ -45,7 +39,7 @@ This plugin integrates a Mineflayer bot with a Capture the Flag (CTF) server via
 
 3. Once the bot connects to the Minecraft server, it will automatically initialize the `CTFApiClient` and attach it to the bot instance as `bot.ctfApi`.
 
-4. Use the `bot.ctfApi` property to interact with the CTF server and make API calls. For example:
+4. You can use the `bot.ctfApi` property to interact with the CTF server and make API calls. For example:
 
     ```javascript
     bot.on("login", async () => {
